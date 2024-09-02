@@ -8,7 +8,12 @@
 
 [강의 00 오리엔테이션](https://github.com/dknife/2024Graphics/raw/main/LN/Lec00_Orientation.pdf)
 
-[강의 01 그래픽스 소개 자료]()
+### 강의 01 그래픽스 소개
 
-[강의 01 그래픽스 소개 강의노트]()
+[자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec01_Introduction2Graphics.pdf)
+
+### 강의 02 OpenGL 소개
+
+[수업 자료]()
+[강의 노트]()
 
