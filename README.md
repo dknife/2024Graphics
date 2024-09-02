@@ -14,6 +14,7 @@
 
 ### 강의 02 OpenGL 소개
 
-[수업 자료]()
-[강의 노트]()
+[수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec02_BasicGraphicsProgramming.pdf)
+
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec02_BasicGraphicsProgramming_Pres.pdf)
 
