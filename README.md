@@ -4,6 +4,8 @@
 
 [설문 조사 링크](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__fVSsTlUNFZWRksyUDczOVNQR1VTSkNLUlVFS1lTVy4u)
 
+[응답 결과](https://forms.office.com/Pages/AnalysisPage.aspx?AnalyzerToken=AiRzmUfwW0bIduVPTEMLrCiZnAnsJqfx&id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__fVSsTlUNFZWRksyUDczOVNQR1VTSkNLUlVFS1lTVy4u)
+
 ## 강의 자료
 
 [강의 00 오리엔테이션](https://github.com/dknife/2024Graphics/raw/main/LN/Lec00_Orientation.pdf)
