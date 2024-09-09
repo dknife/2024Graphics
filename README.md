@@ -22,3 +22,8 @@
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec02_BasicGraphicsProgramming_Pres.pdf)
 
+### 강의 03 OpenGL Primitives
+
+[수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec03_Primitives.pdf)
+
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec03_Primitives_Pres.pdf)
