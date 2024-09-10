@@ -22,6 +22,15 @@
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec02_BasicGraphicsProgramming_Pres.pdf)
 
+#### 실습
+[1-1 파이썬 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_test.py)
+
+[1-2 리스트 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_listtest.py)
+
+[1-3 함수 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_funciton_test.py)
+
+[1-1 PyQt Window 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtApp.py)
+
 ### 강의 03 OpenGL Primitives
 
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec03_Primitives.pdf)
