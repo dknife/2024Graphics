@@ -31,6 +31,8 @@
 
 [1-1 PyQt Window 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtApp.py)
 
+[1-1 나만의 윈도우 클래스 만들기](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtMyWindowApp.py)
+
 ### 강의 03 OpenGL Primitives
 
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec03_Primitives.pdf)
