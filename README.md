@@ -27,7 +27,7 @@
 
 [1-2 리스트 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_listtest.py)
 
-[1-3 함수 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_funciton_test.py)
+[1-3 함수 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_function_test.py)
 
 [1-1 PyQt Window 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtApp.py)
 
