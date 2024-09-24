@@ -43,4 +43,4 @@
 
 [3-1 오픈지엘 위짓](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0301_OpenGLWidget.py)
 
-[3-2 오픈지엘 위짓의 콜백](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0301_OpenGL_Callbacks.py)
+[3-2 오픈지엘 위짓의 콜백](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0302_OpenGL_Callbacks.py)
