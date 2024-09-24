@@ -23,18 +23,24 @@
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec02_BasicGraphicsProgramming_Pres.pdf)
 
 #### 실습
-[1-1 파이썬 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_test.py)
+[2-1 파이썬 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_test.py)
 
-[1-2 리스트 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_listtest.py)
+[2-2 리스트 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_listtest.py)
 
-[1-3 함수 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_function_test.py)
+[2-3 함수 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_function_test.py)
 
-[1-1 PyQt Window 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtApp.py)
+[2-1 PyQt Window 테스트](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtApp.py)
 
-[1-1 나만의 윈도우 클래스 만들기](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtMyWindowApp.py)
+[2-1 나만의 윈도우 클래스 만들기](https://github.com/dknife/2024Graphics/blob/main/codes/01_QtMyWindowApp.py)
 
 ### 강의 03 OpenGL Primitives
 
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec03_Primitives.pdf)
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec03_Primitives_Pres.pdf)
+
+#### 실습
+
+[3-1 오픈지엘 위짓](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0301_OpenGLWidget.py)
+
+[3-2 오픈지엘 위짓의 콜백](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0301_OpenGL_Callbacks.py)
