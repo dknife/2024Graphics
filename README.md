@@ -8,8 +8,11 @@
 3. packages for graphics programming
 
 pip install --upgrade pip
+
 pip install numpy
+
 pip install pyqt6
+
 pip install pyopengl
 
 # 2024Graphics
