@@ -60,7 +60,7 @@ pip install pyopengl
 
 [3-2 오픈지엘 위짓의 콜백](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0302_OpenGL_Callbacks.py)
 
-###### Step by Step
+[3-3 Step by Step OpenGL Window]
 
 [step 1 QWidget을 상속받은 클래스를 윈도로 사용](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_01_CustomWindowApp.py)
 
@@ -68,5 +68,7 @@ pip install pyopengl
 
 [step 3 QOpenGLWidget에 세 개의 핵심 콜백 구현하기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_03_MyOpenGLApp.py)
 
-[3-3 프리미티브 연습](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_04_Primitives.py)
+[3-4 프리미티브 연습](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_04_Primitives.py)
+
+[3-5 원 그리기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_05_Drawing.py)
 
