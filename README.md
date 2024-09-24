@@ -68,5 +68,5 @@ pip install pyopengl
 
 [step 3 QOpenGLWidget에 세 개의 핵심 콜백 구현하기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_03_MyOpenGLApp.py)
 
-
+[3-3 프리미티브 연습](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_04_Primitives.py)
 
