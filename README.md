@@ -62,7 +62,7 @@ pip install pyopengl
 
 ###### Step by Step
 
-[step 1 QWidget을 상속받은 클래스를 윈도로 사용]()
+[step 1 QWidget을 상속받은 클래스를 윈도로 사용](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_01_CustomWindowApp.py)
 
-[step 2 QOpenGLWidget을 상속받은 클래스를 윈도로 사용]()
+[step 2 QOpenGLWidget을 상속받은 클래스를 윈도로 사용](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_02_CustomGLWindow.py)
 
