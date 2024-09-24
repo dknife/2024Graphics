@@ -1,5 +1,17 @@
 [수업전체](https://github.com/dknife/dknife.github.io/wiki/Lecture_Homepage)
 
+### 기본적인 설치
+1. python interpreter (python.org)
+
+2. visual studio code (code.microsoft.com)
+
+3. packages for graphics programming
+
+pip install --upgrade pip
+pip install numpy
+pip install pyqt6
+pip install pyopengl
+
 # 2024Graphics
 
 ### 수업전 사전 설문 조사
