@@ -59,3 +59,10 @@ pip install pyopengl
 [3-1 오픈지엘 위짓](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0301_OpenGLWidget.py)
 
 [3-2 오픈지엘 위짓의 콜백](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex0302_OpenGL_Callbacks.py)
+
+###### Step by Step
+
+[step 1 QWidget을 상속받은 클래스를 윈도로 사용]()
+
+[step 2 QOpenGLWidget을 상속받은 클래스를 윈도로 사용]()
+
