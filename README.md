@@ -66,3 +66,7 @@ pip install pyopengl
 
 [step 2 QOpenGLWidget을 상속받은 클래스를 윈도로 사용](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_02_CustomGLWindow.py)
 
+[step 3 QOpenGLWidget에 세 개의 핵심 콜백 구현하기]()
+
+
+
