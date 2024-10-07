@@ -72,3 +72,8 @@ pip install pyopengl
 
 [3-5 원 그리기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex03/Ex03_05_Drawing.py)
 
+### 강의 4 Camera 다루기
+
+[수업 자료]()
+
+[강의 노트]()
