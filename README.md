@@ -74,6 +74,6 @@ pip install pyopengl
 
 ### 강의 4 Camera 다루기
 
-[수업 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec04_CameraProjection.pdf)
+[수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec04_CameraProjection.pdf)
 
-[강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec04_CameraProjection_pres.pdf)
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec04_CameraProjection_pres.pdf)
