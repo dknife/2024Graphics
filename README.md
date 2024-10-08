@@ -81,3 +81,5 @@ pip install pyopengl
 #### 실습 
 
 [4-1 glOrtho 사용](https://github.com/dknife/2024Graphics/blob/main/codes/Ex04_Camera/0401_glOrthoTest.py)
+
+[4-2 두 개의 OpenGL Widgets](https://github.com/dknife/2024Graphics/blob/main/codes/Ex04_Camera/0403_TwoGLWidgets.py)
