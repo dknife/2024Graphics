@@ -80,4 +80,4 @@ pip install pyopengl
 
 #### 실습 
 
-[4-1 glOrtho 사용]()
+[4-1 glOrtho 사용](https://github.com/dknife/2024Graphics/blob/main/codes/Ex04_Camera/0401_glOrthoTest.py)
