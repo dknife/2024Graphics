@@ -77,3 +77,7 @@ pip install pyopengl
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec04_CameraProjection.pdf)
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec04_CameraProjection_pres.pdf)
+
+#### 실습 
+
+[4-1 glOrtho 사용]()
