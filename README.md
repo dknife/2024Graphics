@@ -89,3 +89,11 @@ pip install pyopengl
 [4-4 카메라 렌즈 비교](https://github.com/dknife/2024Graphics/blob/main/codes/Ex04_Camera/0403_twocameras.py)
 
 [4-５ 카메라 렌즈 비교 최종](https://github.com/dknife/2024Graphics/blob/main/codes/Ex04_Camera/twoCameraFinal.py)
+
+### 강의 5 렌더링 속도 개선
+
+[수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency.pdf)
+
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency_pres.pdf)
+
+
