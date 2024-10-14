@@ -94,6 +94,5 @@ pip install pyopengl
 
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency.pdf)
 
-[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency_pres.pdf)
-
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency_pres.pptx)
 
