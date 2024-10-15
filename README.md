@@ -93,6 +93,9 @@ pip install pyopengl
 #### 카메라 실습 추가
 
 [4-6 원근 카메라 설정과 카메라 위치 잡기](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0501_basicCam.py)
+
+[4-7 평면 가시화와 카메라 놓기](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0502_CamWithPlane.py)
+
 ### 강의 5 렌더링 속도 개선
 
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency.pdf)
