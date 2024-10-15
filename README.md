@@ -98,6 +98,7 @@ pip install pyopengl
 
 [4-8 키보드 처리를 통해 카메라 전후 이동](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0503_CameraSimpleMove.py)
 
+[4-9 임의의 방향으로 전후진](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0503_CameraSimpleMove2.py)
 
 
 ### 강의 5 렌더링 속도 개선
