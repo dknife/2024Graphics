@@ -96,7 +96,7 @@ pip install pyopengl
 
 [4-7 평면 가시화와 카메라 놓기](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0502_CamWithPlane.py)
 
-[4-8 키보드 처리를 통해 카메라 전후 이동]()
+[4-8 키보드 처리를 통해 카메라 전후 이동](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0503_CameraSimpleMove.py)
 
 
 
