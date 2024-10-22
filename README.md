@@ -1,5 +1,8 @@
 [수업전체](https://github.com/dknife/dknife.github.io/wiki/Lecture_Homepage)
 
+### 중간고사 
+[중간고사 문제지](https://forms.office.com/r/GErsc61Wn0Nm)
+
 ### 기본적인 설치
 1. python interpreter (python.org)
 
