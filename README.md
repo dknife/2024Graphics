@@ -122,4 +122,4 @@ pip install pyopengl
 
 [6-4 Display List / Immediat Mode toggle](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
 
-[6-5 DrawArray 사용]
+[6-5 DrawArray 사용](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0605_DisplayList_DrawArray.py)
