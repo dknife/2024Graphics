@@ -113,5 +113,5 @@ pip install pyopengl
 
 #### 실습
 
-[6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py)
 
+[6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py)
