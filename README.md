@@ -121,3 +121,5 @@ pip install pyopengl
 [6-3 Display List를 사용한 렌러링 속도 개선](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
 
 [6-4 Display List / Immediat Mode toggle](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
+
+[6-5 DrawArray 사용]
