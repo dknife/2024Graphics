@@ -117,3 +117,5 @@ pip install pyopengl
 [6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py)
 
 [6-2 25000개 정점으로 느려진 렌더링](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0602SlowRendering.py)
+
+[6-3 Display List를 사용한 렌러링 속도 개선](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
