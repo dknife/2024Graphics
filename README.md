@@ -119,3 +119,5 @@ pip install pyopengl
 [6-2 25000개 정점으로 느려진 렌더링](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0602SlowRendering.py)
 
 [6-3 Display List를 사용한 렌러링 속도 개선](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
+
+[6-4 Display List / Immediat Mode toggle](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
