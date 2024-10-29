@@ -33,7 +33,12 @@ class MyCam :
     def moveRight(self, step) :
         right = self.getRight()
         self.loc += step*right
-            
+
+def drawPlane_prepareBuffer() :
+    ### prepare vertex buffer
+    
+    return buffer
+    
 def drawPlane() :
     n = 500 # 그려지는 바둑판 모양의 땅을 몇 개의 점으로 나눌 것인가
     w = 500 # 그려지는 바둑판 모양의 땅이 너비
