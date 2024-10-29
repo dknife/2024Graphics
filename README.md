@@ -104,6 +104,7 @@ pip install pyopengl
 [4-9 임의의 방향으로 전후진](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0503_CameraSimpleMove2.py)
 
 [4-10 넘파이 버전으로 수정한 전후좌우 카메라 이동](https://github.com/dknife/2024Graphics/blob/main/codes/05CameraWalk/0505_CameraSimpleMoveNumpy.py)
+
 ### 강의 5 렌더링 속도 개선
 
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency.pdf)
@@ -111,5 +112,6 @@ pip install pyopengl
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency_pres.pptx)
 
 #### 실습
-[6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py
+
+[6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py)
 
