@@ -33,12 +33,30 @@ class MyCam :
     def moveRight(self, step) :
         right = self.getRight()
         self.loc += step*right
-
+           
 def drawPlane_prepareBuffer() :
     ### prepare vertex buffer
+    buffer = []
+    
+    n = 500 # 그려지는 바둑판 모양의 땅을 몇 개의 점으로 나눌 것인가
+    w = 500 # 그려지는 바둑판 모양의 땅이 너비
+    d = w / (n-1) # 각 줄 사이의 간격
+    
+    startX = -w/2
+    startZ = -w/2
+    
+    for i in range(n):
+        for j in range(n):
+            if (i+j)%2 == 0 :
+                X = startX + i*d
+                Z = startZ + j*d
+                buffer.append([X, 0.3, Z])
+                buffer.append([X+d, 0.3, Z])
+                buffer.append([X+d, 0.3, Z+d])
+                buffer.append([X, 0.3, Z+d])   
     
     return buffer
-    
+ 
 def drawPlane() :
     n = 500 # 그려지는 바둑판 모양의 땅을 몇 개의 점으로 나눌 것인가
     w = 500 # 그려지는 바둑판 모양의 땅이 너비
@@ -98,10 +116,13 @@ class MyGLWidget(QOpenGLWidget):
         glEndList()    
         
         ##### 데이터 준비: vertex Buffer 만들기
+        self.myVertexArray = drawPlane_prepareBuffer() 
         
         ##### Client State 지정
+        glEnableClientState(GL_VERTEX_ARRAY)
         
         ##### 버텍스 버퍼 지정   
+        glVertexPointer(3, GL_FLOAT, 0, self.myVertexArray)
         
         
     def resizeGL(self, w, h) :
@@ -136,6 +157,8 @@ class MyGLWidget(QOpenGLWidget):
         glCallList(self.myPlaneDraw_displaylist)
         
         # 버텍스 버퍼 그리기
+        glColor3f(0, 0, 1)        
+        glDrawArrays(GL_QUADS, 0, len(self.myVertexArray))
 
 class MyWindow(QMainWindow):
     def __init__(self):
