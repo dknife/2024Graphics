@@ -110,3 +110,6 @@ pip install pyopengl
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec05_RenderingEfficiency_pres.pptx)
 
+#### 실습
+[6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py
+
