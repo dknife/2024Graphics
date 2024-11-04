@@ -114,14 +114,20 @@ pip install pyopengl
 #### 실습
 
 
-[6-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py)
+[5-1 선으로 이루어진 평면 이동](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0601_SimplePlane.py)
 
-[6-2 25000개 정점으로 느려진 렌더링](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0602SlowRendering.py)
+[5-2 25000개 정점으로 느려진 렌더링](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0602SlowRendering.py)
 
-[6-3 Display List를 사용한 렌러링 속도 개선](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
+[5-3 Display List를 사용한 렌러링 속도 개선](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
 
-[6-4 Display List / Immediat Mode toggle](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
+[5-4 Display List / Immediat Mode toggle](https://github.com/dknife/2024Graphics/tree/main/codes/06RenderEfficiency)
 
-[6-5 DrawArray 사용](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0605_DisplayList_DrawArray.py)
+[5-5 DrawArray 사용](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0605_DisplayList_DrawArray.py)
 
-[6-6 Vertex Buffer와 Color Buffer](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0606_DrawArrays_withColor.py)
+[5-6 Vertex Buffer와 Color Buffer](https://github.com/dknife/2024Graphics/blob/main/codes/06RenderEfficiency/0606_DrawArrays_withColor.py)
+
+### 강의 6 메시 읽기
+
+[수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec06_MeshLoading.pdf)
+
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec06_MeshLoading_pres.pdf)
