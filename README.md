@@ -131,3 +131,12 @@ pip install pyopengl
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec06_MeshLoading.pdf)
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec06_MeshLoading_pres.pdf)
+
+#### 실습
+
+[데이터]
+
+* [메시 데이터 예시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/mesh.txt)
+* [소 메시 데이터](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/cow.txt)
+* [두개골 메시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/skull.txt)
+
