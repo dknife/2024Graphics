@@ -5,6 +5,8 @@
 
 [중간고사 평가 결과](https://github.com/dknife/2024Graphics/blob/main/LN/midterm_result.jpg)
 
+[답변 분석](https://github.com/dknife/2024Graphics/blob/main/LN/midterm_analysis.pdf)
+
 ### 기본적인 설치
 1. python interpreter (python.org)
 
