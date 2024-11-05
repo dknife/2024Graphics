@@ -140,3 +140,4 @@ pip install pyopengl
 * [소 메시 데이터](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/cow.txt)
 * [두개골 메시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/skull.txt)
 
+[6-1 OpenGL Widget](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_01_OpenGLEnv.py)
