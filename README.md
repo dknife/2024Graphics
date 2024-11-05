@@ -141,3 +141,7 @@ pip install pyopengl
 * [두개골 메시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/skull.txt)
 
 [6-1 OpenGL Widget](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_01_OpenGLEnv.py)
+
+[6-2 그리기 객체 생성](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_02_OpenGLDraw.py)
+
+
