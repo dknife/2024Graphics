@@ -148,8 +148,6 @@ pip install pyopengl
 
 [6-2 그리기 객체 생성](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_02_OpenGLDraw.py)
 
-[6-3 메시 데이터 읽기]()
-
-
+[6-3 메시 데이터 읽기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_03_MeshLoader_basic.py)
 
 
