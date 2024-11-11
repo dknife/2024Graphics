@@ -151,3 +151,10 @@ pip install pyopengl
 [6-3 메시 데이터 읽기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_03_MeshLoader_basic.py)
 
 [6-4 메시 그리기 간단한 방식(비효율적)](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_04_MeshLoader_SimpleDraw.py)
+
+
+### 강의 7 변환과 계층적 모델링
+
+[수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec07_HierarchicalModeling.pdf)
+
+[강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec07_HierarchicalModeling_pres.pdf)
