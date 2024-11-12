@@ -156,6 +156,8 @@ pip install pyopengl
 
 [6-5 색상을 넣어보기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_05_3DSpace.py)
 
+[6-6 Timer](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_06_Timer.py)
+
 
 ### 강의 7 변환과 계층적 모델링
 
