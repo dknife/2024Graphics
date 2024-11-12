@@ -59,10 +59,10 @@ class MeshLoader():
         
     def render(self):
         glPointSize(3)
-        #glEnableClientState(GL_COLOR_ARRAY)
-        #glDrawElements(GL_TRIANGLES, self.nF * 3, GL_UNSIGNED_INT, self.iBuffer)
-        #glDisableClientState(GL_COLOR_ARRAY)
-        glDrawArrays(GL_POINTS, 0, len(self.vBuffer))        
+        glEnableClientState(GL_COLOR_ARRAY)
+        glDrawElements(GL_TRIANGLES, self.nF * 3, GL_UNSIGNED_INT, self.iBuffer)
+        glDisableClientState(GL_COLOR_ARRAY)
+        glDrawArrays(GL_POINTS, 0, self.nV)        
        
 class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
@@ -74,7 +74,7 @@ class MyGLWindow(QOpenGLWidget) :
     def initializeGL(self):
         glClearColor(0.5, 0.5, 1.0, 1.0)
         glEnable(GL_DEPTH_TEST)
-        self.myMesh.loadMesh('cow.txt')
+        self.myMesh.loadMesh('skull.txt')
         self.myMesh.prepareBufferRendering()
     
     def resizeGL(self, w, h):
