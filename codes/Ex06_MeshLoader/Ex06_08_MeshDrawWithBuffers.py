@@ -14,18 +14,25 @@ class MeshLoader():
     def __init__(self):
         self.nV = 0
         self.nF = 0
-        self.vBuffer = None
-        self.iBuffer = None
+        
+        # 필요한 버퍼를 준비
+        self.vBuffer = None # vertex buffer
+        self.cBuffer = None # color buffer
+        self.iBuffer = None # face index buffer
+        
     
     def loadMesh(self, filename):
         with open(filename, 'rt') as input:
             # nV 읽기
             self.nV = int(next(input))
-            # nV만큼의 공간을 가진 정점 버퍼 준비
+            
+            # nV만큼의 공간을 가진 정점/컬러 버퍼 준비
             self.vBuffer = np.zeros(shape=(self.nV*3, ), dtype=float)
+            self.cBuffer = np.zeros(shape=(self.nV*3, ), dtype=float)
+            
             # 정점 데이터 읽기 : nV만큼 읽기
             for i in range(self.nV):
-                self.vBuffer[i*3:i*3+3] = next(input).split()[0:3]
+                self.vBuffer[i*3:i*3+3] = next(input).split()[0:3]                
             # nF 읽기
             self.nF = int(next(input))
             # nF만큼의 공간을 가진 인덱스 버퍼 준비하고 읽기
@@ -37,9 +44,26 @@ class MeshLoader():
             maxVal = self.vBuffer.max()
             scale = max([minVal, maxVal], key=abs)
             self.vBuffer /= scale
-            print(self.iBuffer)    
+            self.cBuffer = (self.vBuffer + np.array([1]))/2.
+            
+            print(self.cBuffer.min(), self.cBuffer.max())
+            
+    def prepareBufferRendering(self):
+        glEnableClientState(GL_VERTEX_ARRAY)
+        glEnableClientState(GL_COLOR_ARRAY)
+        ### 실제로 넘겨줄 버퍼를 설정
+        # VERTEX 
+        glVertexPointer(3, GL_FLOAT, 0, self.vBuffer)
+        # COLOR
+        glColorPointer(3, GL_FLOAT, 0, self.cBuffer)
         
-    
+    def render(self):
+        glPointSize(3)
+        #glEnableClientState(GL_COLOR_ARRAY)
+        #glDrawElements(GL_TRIANGLES, self.nF * 3, GL_UNSIGNED_INT, self.iBuffer)
+        #glDisableClientState(GL_COLOR_ARRAY)
+        glDrawArrays(GL_POINTS, 0, len(self.vBuffer))        
+       
 class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
         super().__init__()
@@ -50,7 +74,8 @@ class MyGLWindow(QOpenGLWidget) :
     def initializeGL(self):
         glClearColor(0.5, 0.5, 1.0, 1.0)
         glEnable(GL_DEPTH_TEST)
-        self.myMesh.loadMesh('skull.txt')
+        self.myMesh.loadMesh('cow.txt')
+        self.myMesh.prepareBufferRendering()
     
     def resizeGL(self, w, h):
         glMatrixMode(GL_PROJECTION)
@@ -69,7 +94,7 @@ class MyGLWindow(QOpenGLWidget) :
         gluLookAt(x, 1.5, z, 0, 0, 0, 0, 1, 0)
         
         # draw code here        
-        
+        self.myMesh.render()
         self.axisDraw.draw()
         
 class MainWindow(QMainWindow) :
