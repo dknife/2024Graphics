@@ -16,7 +16,6 @@ class MeshLoader():
         self.nF = 0
         self.vBuffer = None
         self.iBuffer = None
-        self.list_number = -1 # 아직 만들어지지 않은 리스트 번호
     
     def loadMesh(self, filename):
         with open(filename, 'rt') as input:
@@ -39,9 +38,7 @@ class MeshLoader():
             scale = max([minVal, maxVal], key=abs)
             self.vBuffer /= scale
             print(self.iBuffer)    
-            
-    def getVertex(self, idx):
-        return self.vBuffer[idx*3: idx*3+3]    
+        
     
 class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
