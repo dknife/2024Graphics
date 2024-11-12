@@ -158,6 +158,8 @@ pip install pyopengl
 
 [6-6 Timer](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_06_Timer.py)
 
+[6-7 Efficient Mesh Drawing with Display List](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_07_Mesh_Displaylist.py)
+
 
 ### 강의 7 변환과 계층적 모델링
 
