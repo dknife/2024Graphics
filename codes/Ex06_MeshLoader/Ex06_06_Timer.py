@@ -7,6 +7,7 @@ from PyQt6.QtCore import *
 
 import sys
 import numpy as np
+import math
 import Drawable
            
 class MeshLoader():
@@ -67,6 +68,7 @@ class MyGLWindow(QOpenGLWidget) :
         self.myMesh = MeshLoader()
         self.axisDraw = Drawable.Drawable()
         self.myMesh.loadMesh('cow.txt')
+        self.angle = 0
         
     
     def initializeGL(self):
@@ -79,10 +81,15 @@ class MyGLWindow(QOpenGLWidget) :
         gluPerspective(60, w/h, 0.1, 1000)
     
     def paintGL(self):
+        
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
-        gluLookAt(1.5, 1.5, 1.5, 0, 0, 0, 0, 1, 0)
+        theta = 3.14 * self.angle/180
+        r = 1.5
+        x = r * math.cos(theta)
+        z = r * math.sin(theta)
+        gluLookAt(x, 1.5, z, 0, 0, 0, 0, 1, 0)
         # draw code
         self.myMesh.drawMesh()
         self.axisDraw.draw()
@@ -92,6 +99,7 @@ class MainWindow(QMainWindow) :
         QMainWindow.__init__(self)
         self.glWidget = MyGLWindow()
         self.setCentralWidget(self.glWidget)
+        self.viewing_angle = 0
         
         self.Timer = QTimer()
         self.Timer.setInterval(1)
@@ -99,7 +107,11 @@ class MainWindow(QMainWindow) :
         self.Timer.start()
         
     def timeout(self):
-        print('.')
+        self.viewing_angle += 1
+        if self.viewing_angle > 360 :
+            self.viewing_angle -= 360
+        self.glWidget.angle = self.viewing_angle
+        self.glWidget.update()
 
         
 def main():
