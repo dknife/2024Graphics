@@ -152,6 +152,10 @@ pip install pyopengl
 
 [6-4 메시 그리기 간단한 방식(비효율적)](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_04_MeshLoader_SimpleDraw.py)
 
+#### 실습 2
+
+[6-5 색상을 넣어보기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex06_MeshLoader/Ex06_05_3DSpace.py)
+
 
 ### 강의 7 변환과 계층적 모델링
 
