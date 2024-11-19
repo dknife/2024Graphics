@@ -179,5 +179,9 @@ pip install pyopengl
 
 #### 실습 2
 * 위의 Drawable, MeshLoader를 그대로 활용
-  
+
+* 변환 적용 예 1
 [Ex0702_Transform.py](https://github.com/dknife/2024Graphics/blob/main/codes/07_Transform/Ex0702_Transform.py)
+
+* 변환 적용 예 2
+[Ex0703_CowCircle.py](https://github.com/dknife/2024Graphics/blob/main/codes/07_Transform/Ex0703_CowCircle.py)
