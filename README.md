@@ -168,3 +168,11 @@ pip install pyopengl
 [수업 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec07_HierarchicalModeling.pdf)
 
 [강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec07_HierarchicalModeling_pres.pdf)
+
+#### 실습 1
+
+[Main](https://github.com/dknife/2024Graphics/blob/main/codes/07_Transform/Ex07_01_MeshDraw.py)
+
+[Drawable.py](https://github.com/dknife/2024Graphics/blob/main/codes/07_Transform/Drawable.py)
+
+[MeshLoader.py](https://github.com/dknife/2024Graphics/blob/main/codes/07_Transform/MeshLoader.py)
