@@ -8,10 +8,12 @@ class Robot:
     def __init__(self):
         
         self.loc = [0, 0, 0]    
-        self.angles = [0, 0]  # arm1, arm2의 회전 각도   
+        self.angles = [0, 0, 0]  # arm1, arm2, hand1의 회전 각도   
         self.body = [1.5, 0.5, 1.5]
         self.arm1 = [0.3, 1.5, 0.3]
         self.arm2 = [0.3, 1.0, 0.3]
+        self.hand1 = [0.1, 0.5, 0.5]
+        self.hand2 = [0.1, 0.5, 0.5]
         
         self.cube = Cube.Cube(size = 1.0)
         self.axis = Axis.Axis()
@@ -47,6 +49,19 @@ class Robot:
         self.axis.draw()
         glPushMatrix()
         glScalef(self.arm2[0], self.arm2[1], self.arm2[2])
+        self.cube.draw()
+        glPopMatrix()
+        
+        #### hand1
+        # 부모의 반만큼 위로 가서 (관절 지점으로 원점을 옮기고)
+        glTranslatef(0, self.arm2[1]/2.0, 0)
+        # 내가 원하는 회전을 하고 (회전하고)
+        glRotatef(self.angles[2], 0, 0, 1)
+        # 나의 반만큼 더 나온다 (내 부품의 끝이 관절에 맞춰지게 한다)
+        glTranslatef(0, self.hand1[1]/2.0, 0)
+        self.axis.draw()
+        glPushMatrix()
+        glScalef(self.hand1[0], self.hand1[1], self.hand1[2])
         self.cube.draw()
         glPopMatrix()
         
