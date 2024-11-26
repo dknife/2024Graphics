@@ -47,8 +47,21 @@ class MainWindow(QMainWindow) :
         dx, dy, dz = 0., 0., 0.
         if e.key() == Qt.Key.Key_W :
             dz = -0.1
-        if e.key() == Qt.Key.Key_S :
+        elif e.key() == Qt.Key.Key_S :
             dz = 0.1
+        elif e.key() == Qt.Key.Key_Q :
+            self.glWidget.myRobot.angles[0] += 5
+        elif e.key() == Qt.Key.Key_E :
+            self.glWidget.myRobot.angles[0] -= 5
+        elif e.key() == Qt.Key.Key_Z :
+            self.glWidget.myRobot.angles[1] += 5
+        elif e.key() == Qt.Key.Key_C :
+            self.glWidget.myRobot.angles[1] -= 5
+        elif e.key() == Qt.Key.Key_A :
+            self.glWidget.myRobot.angles[2] += 5
+        elif e.key() == Qt.Key.Key_D :
+            self.glWidget.myRobot.angles[2] -= 5
+            
         self.glWidget.myRobot.move(dx, dy, dz)
         self.glWidget.update()
         
