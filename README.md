@@ -193,4 +193,4 @@ pip install pyopengl
 
 [개선 1: 3개의 요소를 관절로 묶기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/Ex0704_Arms.py)
 
-[개선 2: glScalef를 이용하여 길이가 다른 로봇 팔을 요소를 연결하기]()
+[개선 2: glScalef를 이용하여 길이가 다른 로봇 팔을 요소를 연결하기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/Ex0705_ArmsWithScale.py)
