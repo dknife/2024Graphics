@@ -16,7 +16,7 @@ import Cube
 class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
         super().__init__()
-        self.axisDraw = Axis.Drawable() 
+        self.axisDraw = Axis.Axis() 
         self.cube = Cube.Cube(size = 0.5) 
     
     def initializeGL(self):
