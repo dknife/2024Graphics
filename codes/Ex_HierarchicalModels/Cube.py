@@ -1,34 +1,63 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
-import numpy as np
-import Axis
 
-class Cube :
-    def __init__(self, size=1.0) :
-        self.myAxis = Axis.Axis()
-        self.size = size
-        half_size = size / 2.0
-        self.verts = np.array([
-            [-half_size, -half_size, -half_size],
-            [half_size, -half_size, -half_size], 
-            [half_size, half_size, -half_size], 
-            [-half_size, half_size, -half_size],  
-            [-half_size, -half_size, half_size],
-            [half_size, -half_size, half_size],
-            [half_size, half_size, half_size],  
-            [-half_size, half_size, half_size]  
-        ])
-        self.edges = np.array([
-            [0, 1], [1, 2], [2, 3], [3, 0],
-            [4, 5], [5, 6], [6, 7], [7, 4],
-            [0, 4], [1, 5], [2, 6], [3, 7]     
-        ])
+from PyQt6.QtWidgets import *
+from PyQt6.QtOpenGLWidgets import *
+from PyQt6.QtCore import *
+
+import sys
+import numpy as np
+import math
+import Axis
+import Cube
+           
+      
+       
+class MyGLWindow(QOpenGLWidget) :
+    def __init__(self):
+        super().__init__()
+        self.axisDraw = Axis.Axis() 
+        self.cube = Cube.Cube(size = 1.0) 
+    
+    def initializeGL(self):
+        glClearColor(0.5, 0.5, 1.0, 1.0)
+        glEnable(GL_DEPTH_TEST)
+    
+    def resizeGL(self, w, h):
+        glMatrixMode(GL_PROJECTION)
+        glLoadIdentity()
+        gluPerspective(60, w/h, 0.1, 1000)
+    
+    def paintGL(self):
         
-    def draw(self) :
-        self.myAxis.draw()
-        glBegin(GL_LINES)
-        # draw every edge
-        for edge in self.edges:
-            glVertex3fv(self.verts[edge[0]])
-            glVertex3fv(self.verts[edge[1]])
-        glEnd()
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+        glMatrixMode(GL_MODELVIEW)
+        glLoadIdentity()
+        
+        gluLookAt(0, 0, 5, 0, 0, 0, 0, 1, 0)
+        
+        self.axisDraw.draw()
+        self.cube.draw()
+        glTranslatef(1, 1, 1)
+        self.cube.draw()
+        
+            
+           
+class MainWindow(QMainWindow) :
+    def __init__(self):
+        QMainWindow.__init__(self)
+        self.glWidget = MyGLWindow()
+        self.setCentralWidget(self.glWidget)
+        
+
+        
+def main():
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    app.exec()
+    
+main()
+                         
+        
+        
