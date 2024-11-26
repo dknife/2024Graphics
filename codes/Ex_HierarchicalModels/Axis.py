@@ -1,7 +1,7 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
-class Drawable() :
+class Axis() :
     def __init__(self, length=1):
         self.length = length
         
