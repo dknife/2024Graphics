@@ -25,6 +25,30 @@ class Robot:
         self.cube.draw()
         glPopMatrix()
         
+        # 부모의 반만큼 위로 가서 (관절 지점으로 원점을 옮기고)
+        glTranslatef(0, self.body[1]/2.0, 0)
+        # 내가 원하는 회전을 하고 (회전하고)
+        glRotatef(45, 0, 0, 1)
+        # 나의 반만큼 더 나온다 (내 부품의 끝이 관절에 맞춰지게 한다)
+        glTranslatef(0, self.arm1[1]/2.0, 0)
+        self.axis.draw()
+        glPushMatrix()
+        glScalef(self.arm1[0], self.arm1[1], self.arm1[2])
+        self.cube.draw()
+        glPopMatrix()
+        
+        # 부모의 반만큼 위로 가서 (관절 지점으로 원점을 옮기고)
+        glTranslatef(0, self.arm1[1]/2.0, 0)
+        # 내가 원하는 회전을 하고 (회전하고)
+        glRotatef(45, 0, 0, 1)
+        # 나의 반만큼 더 나온다 (내 부품의 끝이 관절에 맞춰지게 한다)
+        glTranslatef(0, self.arm2[1]/2.0, 0)
+        self.axis.draw()
+        glPushMatrix()
+        glScalef(self.arm2[0], self.arm2[1], self.arm2[2])
+        self.cube.draw()
+        glPopMatrix()
+        
     def move(self, dx, dy, dz):
         self.loc[0] += dx
         self.loc[1] += dy
