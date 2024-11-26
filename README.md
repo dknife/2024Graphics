@@ -190,3 +190,5 @@ pip install pyopengl
 ### 실습 3
 
 [로봇 팔을 만들기 위한 준비](https://github.com/dknife/2024Graphics/tree/main/codes/Ex_HierarchicalModels)
+
+[개선 1 3개의 요소를 관절로 묶기]()
