@@ -200,3 +200,4 @@ pip install pyopengl
 [계층적 모델링 프로젝트 1 Robot 팔 제어](https://github.com/dknife/2024Graphics/tree/main/codes/Ex_HierarchicalModels/RobotMove)
 
 * [로봇 그리기 개선](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/RobotMove/Robot.py)
+* [제어 프로그램 개선](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/RobotMove/Ex0706_RobotMove.py)
