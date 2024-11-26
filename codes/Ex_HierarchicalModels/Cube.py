@@ -1,9 +1,11 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
 import numpy as np
+import Axis
 
 class Cube :
     def __init__(self, size=1.0) :
+        self.myAxis = Axis.Axis()
         self.size = size
         half_size = size / 2.0
         self.verts = np.array([
@@ -23,10 +25,10 @@ class Cube :
         ])
         
     def draw(self) :
+        self.myAxis.draw()
         glBegin(GL_LINES)
         # draw every edge
         for edge in self.edges:
             glVertex3fv(self.verts[edge[0]])
             glVertex3fv(self.verts[edge[1]])
         glEnd()
-    
