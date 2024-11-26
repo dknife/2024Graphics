@@ -185,3 +185,8 @@ pip install pyopengl
 
 * 변환 적용 예 2
 [Ex0703_CowCircle.py](https://github.com/dknife/2024Graphics/blob/main/codes/07_Transform/Ex0703_CowCircle.py)
+
+
+### 실습 3
+
+[로봇 팔을 만들기 위한 준비](https://github.com/dknife/2024Graphics/tree/main/codes/Ex_HierarchicalModels)
