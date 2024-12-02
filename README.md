@@ -204,11 +204,11 @@ pip install pyopengl
 
 ### 강의 8
 
-[색과 빛 - 강의 자료]
+[색과 빛 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights.pdf)
 
-[색과 빛 - 강의 노트]
+[색과 빛 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights_pres.pdf)
 
-[정점별 법선 - 강의 자료]
+[정점별 법선 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal.pdf)
 
-[정점별 법선 - 강의 노트]
+[정점별 법선 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal_pres.pdf)
 
