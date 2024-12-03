@@ -221,5 +221,5 @@ pip install pyopengl
 
 #### 실습 1 
 
-[법선 벡터를 가진 메시]()
+[법선 벡터를 가진 메시](https://github.com/dknife/2024Graphics/tree/main/codes/Ex08_NormalsAndLights)
 
