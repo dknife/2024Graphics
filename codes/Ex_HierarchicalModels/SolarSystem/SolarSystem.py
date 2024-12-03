@@ -16,6 +16,8 @@ class MyGLWindow(QOpenGLWidget) :
         super().__init__()
         self.mySphere = Sphere.Sphere()
         self.sun_angle = 0.0
+        self.earth_revolve = 0.0 # 공전
+        self.earth_rotate = 0.0 # 회전
     
     def initializeGL(self):
         glClearColor(0.5, 0.5, 1.0, 1.0)
@@ -34,17 +36,27 @@ class MyGLWindow(QOpenGLWidget) :
         
         gluLookAt(3, 3, 15, 0, 0, 0, 0, 1, 0)
         
+        glPushMatrix() #### 태양의 자전을 고립시키자
         glRotatef(self.sun_angle, 0, 1, 0)
-        self.mySphere.draw()
+        self.mySphere.draw() # SUN
+        glPopMatrix() #### 태양 자전 변환의 끝
         
-    def rotateSun(self):
-        self.sun_angle += 1.0
-        if self.sun_angle >= 360 :
-            self.sun_angle -= 360            
-        self.update()
+        glRotatef(self.earth_revolve, 0, 1, 0) ## 공전
+        glTranslatef(3, 0, 0)
+        glRotatef(self.earth_rotate, 0, 1, 0) ## 자전
+        glScalef(0.3, 0.3, 0.3)
+        self.mySphere.draw() # EARTH
         
+    def increaseAngles(self):
+        self.sun_angle = self.increaseAngle(self.sun_angle, 0.1)
+        self.earth_revolve = self.increaseAngle(self.earth_revolve, 1.23)
+        self.earth_rotate = self.increaseAngle(self.earth_rotate, 3.1)
         
-        
+    def increaseAngle(self, angle, step):
+        angle += step
+        if angle >= 360 :
+            angle -= 360     
+        return angle    
            
 class MainWindow(QMainWindow) :
     def __init__(self):
@@ -58,8 +70,8 @@ class MainWindow(QMainWindow) :
         self.Timer.start()
         
     def timeout(self):
-        self.glWidget.rotateSun()
-        
+        self.glWidget.increaseAngles()
+        self.glWidget.update()
 
 def main():
     app = QApplication(sys.argv)
