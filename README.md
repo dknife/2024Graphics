@@ -219,3 +219,7 @@ pip install pyopengl
 
 [정점별 법선 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal_pres.pdf)
 
+#### 실습 1 
+
+[법선 벡터를 가진 메시]()
+
