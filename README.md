@@ -206,7 +206,7 @@ pip install pyopengl
 
 [태양계 프로젝트]()
 
-* [구 그리기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/Sphere.py)
+* [구 그리기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/SolarSystem/Sphere.py)
 
   
 ### 강의 8
