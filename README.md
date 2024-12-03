@@ -195,13 +195,20 @@ pip install pyopengl
 
 [개선 2: glScalef를 이용하여 길이가 다른 로봇 팔을 요소를 연결하기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/Ex0705_ArmsWithScale.py)
 
-#### 프로젝트
+#### 프로젝트 1
 
 [계층적 모델링 프로젝트 1 Robot 팔 제어](https://github.com/dknife/2024Graphics/tree/main/codes/Ex_HierarchicalModels/RobotMove)
 
 * [로봇 그리기 개선](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/RobotMove/Robot.py)
 * [제어 프로그램 개선](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/RobotMove/Ex0706_RobotMove.py)
 
+#### 프로젝트 2
+
+[태양계 프로젝트]()
+
+* [구 그리기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/Sphere.py)
+
+  
 ### 강의 8
 
 [색과 빛 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights.pdf)
