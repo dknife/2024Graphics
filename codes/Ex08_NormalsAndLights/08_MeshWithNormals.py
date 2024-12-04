@@ -9,20 +9,35 @@ import sys
 import numpy as np
 import math
 import MeshLoader
-           
-       
-       
+
 class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
         super().__init__()
         self.myMesh = MeshLoader.MeshLoader()
         self.angle = 0
+        self.light_pos = [0, 1, 0, 0]
+        
+        self.light_col = [1, 1, 0, 1]
+        self.light_ambient = [0.1, 0.1, 0.1, 1.0]
+        self.mat_col = [1, 1, 1, 0]
+        self.shininess = [125.0]
     
     def initializeGL(self):
         glClearColor(0.5, 0.5, 1.0, 1.0)
         glEnable(GL_DEPTH_TEST)
         self.myMesh.loadMesh('cow.txt')
         self.myMesh.prepareBufferRendering()
+        glEnable(GL_LIGHTING)
+        glEnable(GL_LIGHT0)
+        
+        glLightfv(GL_LIGHT0, GL_DIFFUSE, self.light_col)
+        glLightfv(GL_LIGHT0, GL_SPECULAR, self.light_col)
+        glLightfv(GL_LIGHT0, GL_AMBIENT, self.light_ambient)
+        
+        glMaterialfv(GL_FRONT, GL_DIFFUSE, self.light_col)
+        glMaterialfv(GL_FRONT, GL_SPECULAR, self.light_col)
+        glMaterialfv(GL_FRONT, GL_SHININESS, self.shininess)
+        
     
     def resizeGL(self, w, h):
         glMatrixMode(GL_PROJECTION)
@@ -34,11 +49,15 @@ class MyGLWindow(QOpenGLWidget) :
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
+        
+        
         theta = 3.14 * self.angle/180
         r = 2.5
         x = r * math.cos(theta)
         z = r * math.sin(theta)
         gluLookAt(x, 1.5, z, 0, 0, 0, 0, 1, 0)
+        
+        glLightfv(GL_LIGHT0, GL_POSITION, self.light_pos)
         
         # draw code here        
         self.myMesh.render()
@@ -70,6 +89,3 @@ def main():
     app.exec()
     
 main()
-                         
-        
-        
