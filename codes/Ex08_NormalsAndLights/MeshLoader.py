@@ -28,7 +28,6 @@ class MeshLoader():
             
             # nV만큼의 공간을 가진 정점/컬러/법선 버퍼 준비
             self.vBuffer = np.zeros(shape=(self.nV*3, ), dtype=float)
-            self.cBuffer = np.zeros(shape=(self.nV*3, ), dtype=float)
             self.nBuffer = np.zeros(shape=(self.nV*3,), dtype=float)
             
             # 정점 데이터 읽기 : nV만큼 읽기
@@ -67,39 +66,21 @@ class MeshLoader():
                 N = self.nBuffer[i*3:i*3+3]
                 norm = np.linalg.norm(N)
                 N = N / norm
-                self.nBuffer[i*3: i*3+3]
-                
-                print(self.nBuffer[i*3: i*3+3])
-            
-            
+                self.nBuffer[i*3: i*3+3] = -N
                 
             minVal = self.vBuffer.min()
             maxVal = self.vBuffer.max()
             scale = max([minVal, maxVal], key=abs)
             self.vBuffer /= scale
-            self.cBuffer = (self.vBuffer + np.array([1]))/2.
-         
-            print(self.cBuffer.min(), self.cBuffer.max())
             
     def prepareBufferRendering(self):
         glEnableClientState(GL_VERTEX_ARRAY)
-        glEnableClientState(GL_COLOR_ARRAY)
-        #glEnableClientState(GL_NORMAL_ARRAY)
+        glEnableClientState(GL_NORMAL_ARRAY)
         ### 실제로 넘겨줄 버퍼를 설정
         # VERTEX 
         glVertexPointer(3, GL_FLOAT, 0, self.vBuffer)
-        # COLOR
-        glColorPointer(3, GL_FLOAT, 0, self.cBuffer)
+        glNormalPointer(GL_FLOAT, 0, self.nBuffer)
+
         
     def render(self):
-        
-        glBegin(GL_TRIANGLES)
-        for i in range(self.nF):
-            verts = self.iBuffer[i*3: i*3+3]
-            glNormal3fv(self.nBuffer[verts[0]*3: verts[0]*3 + 3] )
-            glVertex3fv(self.vBuffer[verts[0]*3: verts[0]*3 + 3])
-            glNormal3fv(self.nBuffer[verts[1]*3: verts[1]*3 + 3] )
-            glVertex3fv( self.vBuffer[verts[1]*3: verts[1]*3 + 3])
-            glNormal3fv(self.nBuffer[verts[2]*3: verts[2]*3 + 3] )
-            glVertex3fv( self.vBuffer[verts[2]*3: verts[2]*3 + 3])
-        glEnd()
+        glDrawElements(GL_TRIANGLES, self.nF * 3, GL_UNSIGNED_INT, self.iBuffer)
