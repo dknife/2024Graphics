@@ -211,15 +211,15 @@ pip install pyopengl
   
 ### 강의 8 - 색과 빛
 
-[색과 빛 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights.pdf)
+[색과 빛 - 강의 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec08_Colors_Lights.pdf)
 
-[색과 빛 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights_pres.pdf)
+[색과 빛 - 강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec08_Colors_Lights_pres.pdf)
 
 ### 강의 9 - 조명
 
-[정점별 법선 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal.pdf)
+[정점별 법선 - 강의 자료](https://github.com/dknife/2024Graphics/raw/main/LN/Lec09_PerVertexNormal.pdf)
 
-[정점별 법선 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal_pres.pdf)
+[정점별 법선 - 강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec09_PerVertexNormal_pres.pdf)
 
 #### 실습 1 
 
@@ -228,4 +228,5 @@ pip install pyopengl
 
 ### 강의 10 텍스처 매핑
 
-[텍스처 매핑 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal_pres.pdf)
+[텍스처 매핑 - 강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec10_TextureMapping.pdf)
+
