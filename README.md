@@ -209,11 +209,13 @@ pip install pyopengl
 * [구 그리기](https://github.com/dknife/2024Graphics/blob/main/codes/Ex_HierarchicalModels/SolarSystem/Sphere.py)
 
   
-### 강의 8
+### 강의 8 - 색과 빛
 
 [색과 빛 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights.pdf)
 
 [색과 빛 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec08_Colors_Lights_pres.pdf)
+
+### 강의 9 - 조명
 
 [정점별 법선 - 강의 자료](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal.pdf)
 
@@ -223,3 +225,7 @@ pip install pyopengl
 
 [법선 벡터를 가진 메시](https://github.com/dknife/2024Graphics/tree/main/codes/Ex08_NormalsAndLights)
 
+
+### 강의 10 텍스처 매핑
+
+[텍스처 매핑 - 강의 노트](https://github.com/dknife/2024Graphics/blob/main/LN/Lec09_PerVertexNormal_pres.pdf)
