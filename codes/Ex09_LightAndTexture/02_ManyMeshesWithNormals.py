@@ -14,7 +14,8 @@ class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
         super().__init__()
         self.myMesh = MeshLoader.MeshLoader()
-        self.angle = 0
+        
+        self.angle = 0        
         self.light_pos = [0, 2, 0, 1]
         
         self.light_col = [1, 1, 0, 1]
@@ -77,6 +78,13 @@ class MainWindow(QMainWindow) :
         self.Timer.start()
         
     def timeout(self):
+        self.glWidget.angle += 1        
+        if self.glWidget.angle > 360 :
+            self.glWidget.angle -= 360
+            
+        radian = np.deg2rad(self.glWidget.angle)
+        x = 10*np.cos(radian)
+        self.glWidget.light_pos[0] = x
         
         self.glWidget.update()
 
