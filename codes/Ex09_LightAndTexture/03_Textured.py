@@ -9,7 +9,7 @@ import sys
 import numpy as np
 import math
 import MeshLoader
-#import drawPlane
+import drawPlane
 
 class MyGLWindow(QOpenGLWidget) :
     def __init__(self):
@@ -41,7 +41,7 @@ class MyGLWindow(QOpenGLWidget) :
         glMaterialfv(GL_FRONT, GL_SPECULAR, self.mat_col)
         glMaterialfv(GL_FRONT, GL_SHININESS, self.mat_col)
         
-        #self.plane = drawPlane.TexturedPlane()
+        self.plane = drawPlane.TexturedPlane()
         
     
     def resizeGL(self, w, h):
@@ -66,7 +66,7 @@ class MyGLWindow(QOpenGLWidget) :
         
         # draw code here        
         self.myMesh.render()
-        #self.plane.drawPlane()
+        self.plane.drawPlane()
         
 class MainWindow(QMainWindow) :
     def __init__(self):
