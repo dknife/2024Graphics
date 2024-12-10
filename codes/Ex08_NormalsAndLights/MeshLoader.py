@@ -66,7 +66,7 @@ class MeshLoader():
                 N = self.nBuffer[i*3:i*3+3]
                 norm = np.linalg.norm(N)
                 N = N / norm
-                self.nBuffer[i*3: i*3+3] = -N
+                self.nBuffer[i*3: i*3+3] = N
                 
             minVal = self.vBuffer.min()
             maxVal = self.vBuffer.max()
