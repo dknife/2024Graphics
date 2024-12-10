@@ -230,3 +230,8 @@ pip install pyopengl
 
 [텍스처 매핑 - 강의 노트](https://github.com/dknife/2024Graphics/raw/main/LN/Lec10_TextureMapping.pdf)
 
+
+#### 실습 - 조명과 텍스처
+
+[Code Folder](https://github.com/dknife/2024Graphics/tree/main/codes/Ex09_LightAndTexture)
+
