@@ -37,9 +37,9 @@ class MyGLWindow(QOpenGLWidget) :
         glLightfv(GL_LIGHT0, GL_SPECULAR, self.light_col)
         glLightfv(GL_LIGHT0, GL_AMBIENT, self.light_ambient)
         
-        glMaterialfv(GL_FRONT, GL_DIFFUSE, self.light_col)
-        glMaterialfv(GL_FRONT, GL_SPECULAR, self.light_col)
-        glMaterialfv(GL_FRONT, GL_SHININESS, self.shininess)
+        glMaterialfv(GL_FRONT, GL_DIFFUSE, self.mat_col)
+        glMaterialfv(GL_FRONT, GL_SPECULAR, self.mat_col)
+        glMaterialfv(GL_FRONT, GL_SHININESS, self.mat_col)
         
         #self.plane = drawPlane.TexturedPlane()
         
