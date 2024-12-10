@@ -50,12 +50,7 @@ class MyGLWindow(QOpenGLWidget) :
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
         
-        
-        theta = 3.14 * self.angle/180
-        r = 2.5
-        x = r * math.cos(theta)
-        z = r * math.sin(theta)
-        gluLookAt(x, 1.5, z, 0, 0, 0, 0, 1, 0)
+        gluLookAt(1.5, 1.5, 1.5, 0, 0, 0, 0, 1, 0)
         
         glLightfv(GL_LIGHT0, GL_POSITION, self.light_pos)
         
@@ -75,10 +70,7 @@ class MainWindow(QMainWindow) :
         self.Timer.start()
         
     def timeout(self):
-        self.viewing_angle += 1
-        if self.viewing_angle > 360 :
-            self.viewing_angle -= 360
-        self.glWidget.angle = self.viewing_angle
+        
         self.glWidget.update()
 
         
