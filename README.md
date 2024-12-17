@@ -7,6 +7,9 @@
 
 [답변 분석](https://github.com/dknife/2024Graphics/blob/main/LN/midterm_analysis.pdf)
 
+### 기말고사
+[기말고사 문제지](https://forms.office.com/r/QKu028k4X9)
+
 ### 기본적인 설치
 1. python interpreter (python.org)
 
